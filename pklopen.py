@@ -284,39 +284,3 @@ def create_RidgePlot(file, wanted_interactions):
     return
 
 
-# read python dict back from the file
-file_path3 = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\WPTcells results\legRetLists_SELP_WP.pkl"
-file_path4 = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\GPTcells results\legRetLists_SELP_GP.pkl"
-file_path5 = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\WPTcells results\DSA_Tables_SELP_WP.pkl"
-file_path6 = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\GPTcells results\DSA_Tables_SELP_GP.pkl"
-path_sig_gp = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\GPTcells results\GP_Sig_Rec.pkl"
-path_sig_wp = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\WPTcells results\WP_Sig_Rec.pkl"
-# create_RidgePlot(r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\merge_all_T.csv",
-#                  ['from 0_Neutrophils to CD4', 'from 5_DC(moDC) to CD4', 'from 0_Neutrophils to 2_B_cells',
-#                   'from Tregs to CD4', 'from Tregs to 4_Macrophages(M2_like)', 'from 7_Macrophages(TAM) to CD4'])
-
-# merge_all_func(file_path3, file_path4, file_path5, file_path6, path_sig_wp, path_sig_gp)
-# print(ligand_list(file_path3, file_path4, '8'))
-# print(merge_DSA(dict5['1']['4'], dict6['1']['4']))
-# merged = merge_lists(dict3['1']['4'], dict4['1']['4'], dict5['1']['4'], dict6['1']['4'], dict_sig_wp['1']['4'], dict_sig_gp['1']['4'])
-# print(merged)
-# merge_all_func(file_path3, file_path4, file_path5, file_path6, path_sig_wp, path_sig_gp)
-# print(calc_all_p_values(file_path3, file_path4, file_path5, file_path6,
-#                             r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\merge_all_T_1.csv", path_sig_wp, path_sig_gp))
-# print(create_RidgePlot(
-#         ['7to2_sig.csv', '5to2_sig.csv', '7to6_sig.csv', '4to2_sig.csv', '7to0_sig.csv', '4to6_sig.csv', '2to6_sig.csv', '3to4_sig.csv', '5to6_sig.csv', '4to1_sig.csv']))
-print(create_diverging_dotplot_1(r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\merge_all_T.csv",
-                                 'from Tregs to CD4'))
-# print(permutations_func(merged, r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\merge_all.csv", 0.5))
-# print(merge_lists(dict2['2']['8'], dict3['2']['8'], dict4['2']['8'], dict5['2']['8']))
-# print(merge_DSA(dict4['1']['7'], dict5['1']['7']))
-# print(calc_all_DSA_diff(file_path3, file_path4))
-# file_path3 = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\outputObj\DSA_Graphs_SELP.pkl"
-# pkl_file3 = open(file_path3, 'rb')
-# mydict3 = pickle.load(pkl_file3)
-# pkl_file3.close()
-# sig_path = r"C:\Users\ofrik\Desktop\Tutorial\interFlow\interFLOW\sig_rec_GP.pkl"
-# sig_file = open(sig_path, 'rb')
-# dict_sig = pickle.load(sig_file)
-# sig_file.close()
-# print(dict_sig['1'])
