@@ -276,15 +276,15 @@ def create_RidgePlot(merge_all, wanted_interactions):
     plt.subplots_adjust(hspace=0.3)
     # Show the plot
     plt.show()
-    g.savefig('RidgePlot.pdf')
+    g.savefig('results/' + 'RidgePlot.pdf')
     return
 
 
 if __name__ == '__main__':
-    merge_all_func('legRetLists_SELP_WP.pkl', 'legRetLists_SELP_GP.pkl', 'DSA_Tables_SELP_WP.pkl',
-                   'DSA_Tables_SELP_GP.pkl', 'WP_Sig_Rec.pkl', 'GP_Sig_Rec.pkl')
-    calc_all_p_values('legRetLists_SELP_WP.pkl', 'legRetLists_SELP_GP.pkl', 'DSA_Tables_SELP_WP.pkl',
-                      'DSA_Tables_SELP_GP.pkl', 'merge_all.csv', 'WP_Sig_Rec.pkl', 'GP_Sig_Rec.pkl')
+    merge_all_func('legRetLists_WT.pkl', 'legRetLists_MUT.pkl', 'DSA_Tables_WT.pkl',
+                   'DSA_Tables_MUT.pkl', 'WT_Sig_Rec.pkl', 'MUT_Sig_Rec.pkl')
+    calc_all_p_values('legRetLists_WT.pkl', 'legRetLists_MUT.pkl', 'DSA_Tables_WT.pkl',
+                      'DSA_Tables_MUT.pkl', 'merge_all.csv', 'WT_Sig_Rec.pkl', 'MUT_Sig_Rec.pkl')
     merge_all = pd.read_csv('merge_all.csv')
     interactions = merge_all['interaction'].unique()
     # Create diverging dot plots for each unique interaction
